@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 300px; height: 300px; background: yellow;" id="box"></div>
+    <button id="btn">Click me</button>
+    
+    <input type="text" name="" id="txt1">
+    <label style="display: none;" for="" id="lab1">Enter a valid data !</label>
+    <input type="text" id="txt2">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script >
+        $(document).ready(function(){
+            $("#btn").mouseenter(function(){
+                $(this).css({"background":"black"})
+            })
+            $("#btn").mouseleave(function(){
+                $(this).css({"background":"white"})
+            })
+            $("#btn").click(function(){
+                $("#box").fadeToggle(3000)
+            })
+            $("#txt1").blur(function(){
+                var text=$(this).val()
+                if(text.length<4){
+                    $("#lab1").show()
+                }
+                else{
+                    $("#lab1").hide()
+                }
+
+            })
+        })
+    </script>
+</body>
+</html>

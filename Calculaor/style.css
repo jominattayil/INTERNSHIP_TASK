@@ -1,0 +1,31 @@
+.calc{
+    width: 400px;
+    height: 520px;
+    background: grey;
+    margin-left: 500px;
+    background:whitesmoke;
+}
+#screen{
+    width: 80%;
+    height: 40px;
+    margin-left: 36px;
+    margin-top: 36px;
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px  #888888;
+    cursor: pointer
+}
+.btn{
+    width: 50px;
+    height: 45px;
+    margin-left: 36px;
+    margin-top: 36px;
+    font-weight: bold;
+    font-size: 20px;
+    background: white;
+}
+#screen:hover{
+background: yellow;
+}

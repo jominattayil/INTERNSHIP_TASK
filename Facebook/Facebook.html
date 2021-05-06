@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="fb.css" type="text/css"
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a class="logo-text" href="index.html">facebook</a>
+            </div>
+            <div class="login">
+                <form  action="" >
+                    <table class="login-controls">
+                        <tr>
+                            <td> <label class="login-label">Email or Phone</label></td>
+                            <td> <label class="login-label">Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input class="login-button" type="submit" value="Log In" ></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="forgottenaccount.html" style="color: #9cb4d8; text-decoration: none; font-size: 11px;" >Forgotten account? </a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="left-section">
+                <p class="left-text">Facebook helps you connect and share with <br> the people in your life.</p>
+                <img class="left-img" src="fb.png" alt="">
+            </div>
+            <div class="right-section">
+                <h1 class="right-text1">Create an account</h1>
+                <p class="right-text2">It's quick and easy.</p>
+                <form action="" id="signup-form">
+                    <input name="fname" class="form-firstname" type="text" placeholder="Firstname">
+                    <input name="sname" class="form-secondname" type="text" placeholder="Surname">
+                    <br>
+                    <input class="form-email" type="text" placeholder="Mobile number or email address">
+                    <br>
+                    <input class="form-pswd" type="text" placeholder="New password">
+                    <br>
+                    <p class="form-birthday">Birthday</p> <br>
+                    <select aria-label="day" name="birthday_ay" id="day" title="Day" class="form-bday">
+                        <option value="0">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="fb.js"></script>
+</body>
+</html>
